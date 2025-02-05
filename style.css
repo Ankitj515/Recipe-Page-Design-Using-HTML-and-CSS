@@ -12,15 +12,17 @@
     box-sizing: border-box;
 }
 
+
 body {
-    max-width: 1440px;
+    max-width: 100%;
     background-color: #F3E5D8;
     
 }
 
+
 .container {
     max-width: 735px;
-    height: 1680px;
+    height: auto;
     background-color: hsl(0, 0%, 100%);
     margin: auto;
     inset: 0;
@@ -54,7 +56,6 @@ img {
 }
 
 .prep {
-    height: 180px;
     width: 100%;
     background-color: hsl(330, 100%, 98%);
     border-radius: 10px;
@@ -149,4 +150,35 @@ table tr:last-child .nutri-name,
 table tr:last-child .nutri-value {
     border-bottom: none;
     
+}
+
+@media (max-width: 375px) {
+    .container{
+        padding: 15px;
+        margin: 20px;
+    }
+    .title{
+        font-size: 24px;
+    }
+    .discription{
+        font-size: 14px;
+    }
+    .prep{
+        padding-bottom: 10px;
+    }
+    .prep-title{
+        font-size: 16px;
+    }
+    .sub-title{
+        font-size: 16px;
+    }
+    .list{
+        font-size: 14px;
+    }
+    ol li{
+        font-size: 14px;
+    }
+    .nutri-name, .nutri-value{
+        font-size: 14px;
+    }
 }
